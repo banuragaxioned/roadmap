@@ -9,7 +9,7 @@
 		"preview": "next build && next start",
 		"lint": "next lint",
 		"clear": "rm -rf .turbo && rm -rf node_modules && rm -rf .next",
-		"fresh": "npm run clear && npm install && npm run dev",
+		"fresh": "yarn clear && yarn install && yarn dev",
 		"format:check": "prettier --check --ignore-path .gitignore .",
 		"format": "prettier --write --ignore-path .gitignore ."
 	},
