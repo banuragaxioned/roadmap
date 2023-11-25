@@ -20,7 +20,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
 					<div className="flex">
-						<div className="w-56"></div>
 						<div>{children}</div>
 					</div>
 				</ThemeProvider>
