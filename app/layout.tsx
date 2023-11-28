@@ -10,8 +10,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-	title: "Codex",
-	description: "Snippet sharing for teams",
+	title: "Roadmap",
+	description: "Technology Roadmap",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
