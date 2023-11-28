@@ -3,6 +3,8 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import { NavMenu } from "@/components/nav-menu";
+import { SiteHeader } from "@/components/site-header";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -20,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
 					<div className="flex">
+						<SiteHeader />
 						<div>{children}</div>
 					</div>
 				</ThemeProvider>
