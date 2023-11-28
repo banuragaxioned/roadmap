@@ -1,7 +1,9 @@
+import BarChart from "@/components/viz/bar-chart";
+
 export default function Home() {
 	return (
 		<main>
-			<div>Hello World!</div>
+			<BarChart data={[5, 10, 1, 3]} width={500} height={300} id="root" />
 		</main>
 	);
 }
